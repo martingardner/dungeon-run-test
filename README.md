@@ -5,4 +5,8 @@ run command: npm run dev-server
 
 http://localhost:8080/
 
-add gulp to this, webpack only deals with js, and is clunky with dealing with scss and copying html files
+gulp is also added, currently there is a run sequencer installed, 
+so in this case if you run
+gulp build it will do the sass command and then copy index over.
+
+note there are two commands used here.  npm run dev-server still handles the react.js specific things, and gulp build will handle the files and anything not to do specifically with react.
