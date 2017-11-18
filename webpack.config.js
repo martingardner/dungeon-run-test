@@ -5,7 +5,7 @@ var port = 8080;
 var publicPath = '/resources/react/';
 
 module.exports = {
-	entry: './resources/react/component_1/main.js',
+	entry: './resources/react/dungeon_run_test/main.js',
 	output: {
 		path: path.resolve(__dirname, './public/build/react/'),
 		filename: 'app.js'
@@ -26,7 +26,7 @@ module.exports = {
 				loader: 'babel-loader',
 				exclude: /node_modules/,
 				query: {
-					presets: ['es2015', 'react', 'stage-2']
+					presets: ['es2015', 'react', 'stage-2', 'stage-3']
 				}
 			},
 			{

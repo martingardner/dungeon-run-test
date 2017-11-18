@@ -15,6 +15,6 @@ gulp.task('sass', function(){
 })
 
 gulp.task('comp1', function(){
-	return gulp.src('resources/react/component_1/index.html')
+	return gulp.src('resources/react/dungeon_run_test/index.html')
 		.pipe( gulp.dest('public/build/react/'))
 });
