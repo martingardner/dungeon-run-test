@@ -9,9 +9,9 @@ gulp.task('build', function(callback){
 
 
 gulp.task('sass', function(){
-	return gulp.src('resources/sass/*')
+	return gulp.src('resources/sass/main.scss')
 		.pipe( sass() )
-		.pipe( gulp.dest('public/build/css'))
+		.pipe( gulp.dest('public/build/react/css'))
 })
 
 gulp.task('comp1', function(){
