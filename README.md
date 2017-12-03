@@ -4,5 +4,8 @@ basic webpack builder with react, redux, and babel in webpack config.  babel sho
 - npm install
 - npm run dev-server
 
+for testing
+- npm run test
+
 http://localhost:8080/
 
