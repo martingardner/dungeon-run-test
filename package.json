@@ -4,6 +4,7 @@
   "description": "starter for react-redux-webpack",
   "main": "index.js",
   "scripts": {
+    "test": "mocha --compilers js:babel-core/register ./resources/react/dungeon_run_test/tests --recursive",
     "dev-server": "webpack-dev-server --inline --progress --colors"
   },
   "repository": {
@@ -22,7 +23,12 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "enzyme": "^3.2.0",
+    "enzyme-adapter-react-15": "^1.0.5",
     "jest": "^21.2.1",
+    "jsdom": "11.5.1",
+    "jsdom-global": "3.0.2",
+    "mocha": "^4.0.1",
+    "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.1.1",
     "run-sequence": "^2.0.0",
     "webpack": "^2.5.1",
@@ -35,6 +41,7 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-install": "^1.1.0",
     "gulp-sass": "^3.1.0",
