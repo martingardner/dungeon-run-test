@@ -7,5 +7,6 @@ import Login from '../../components/login/login';
 describe('Test login page', () => {
 	it('Wrong login should fail', () => {
 		const wrapper = mount(<Login />);
+		expect(wrapper.state().un).to.equal('admin');
 	})
 });
