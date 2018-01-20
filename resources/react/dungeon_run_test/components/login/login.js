@@ -33,14 +33,14 @@ class login extends React.Component {
 				<form onSubmit={ (e)=> this.validateLogin(e) }>
 					<fieldset>
 						<label>User Name</label>
-						<input type="text" value={this.state.un} onChange={ (e)=> this.updateVal('un', e.target.value)} />
+						<input type="text" id="userName" value={this.state.un} onChange={ (e)=> this.updateVal('un', e.target.value)} />
 					</fieldset>
 					<fieldset>
 						<label>Password</label>
-						<input type="password" value={this.state.pw} onChange={ (e)=> this.updateVal('pw', e.target.value)} />
+						<input type="password" id="password" value={this.state.pw} onChange={ (e)=> this.updateVal('pw', e.target.value)} />
 					</fieldset>
 					<fieldset>
-						<button>Submit</button>
+						<button id="loginSubmit">Submit</button>
 						<span>{this.state.error}</span>
 					</fieldset>
 				</form>

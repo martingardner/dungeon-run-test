@@ -5,7 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register ./resources/react/dungeon_run_test/tests --recursive",
-    "dev-server": "webpack-dev-server --inline --progress --colors"
+    "dev-server": "webpack-dev-server --inline --progress --colors",
+    "jest-test": "jest"
+  },
+  "jest": {
+    "setupFiles" : [
+      "<rootDir>/resources/react/dungeon_run_test/tests/setupTests.js"
+    ],
+    "collectCoverageFrom": [
+      "**/resources/react/dungeon_run_test/tests/*.{js,jsx}"
+    ]
   },
   "repository": {
     "type": "git",
@@ -27,7 +36,6 @@
     "jest": "^21.2.1",
     "jsdom": "11.5.1",
     "jsdom-global": "3.0.2",
-    "mocha": "^4.0.1",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.1.1",
     "run-sequence": "^2.0.0",
@@ -41,11 +49,11 @@
     "babel-polyfill": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-install": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-scripts": "^1.1.0"
   }
 }
