@@ -17,8 +17,7 @@ class login extends React.Component {
 	}
 
 	validateLogin = () => {
-		
-		console.log('this.state', this.state.un, this.state.pw);
+		//console.log('this.state', this.state.un, this.state.pw);
 		if(this.state.un === 'admin' && this.state.pw === 'password'){
 			this.setState({error : ''});
 		} else {

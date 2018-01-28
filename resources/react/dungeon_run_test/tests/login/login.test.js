@@ -48,13 +48,10 @@ describe('Test Failed Username and Password results', ()=> {
         })
 
         it('expect loginerror', ()=> {
-
             console.log( login.state() );
             expect(login.state().error.length).not.toEqual(0);
         })
     })
-    
-
 })
 
 
