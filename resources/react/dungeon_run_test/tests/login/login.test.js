@@ -35,7 +35,6 @@ describe('Test updateVal successful updates state username and password', ()=> {
 describe('Test Failed Username and Password results', ()=> {
     let login = shallow(<Login />);
 
-    
     describe(' with correct username but wrong password', ()=> {
         beforeEach( ()=> {
             login.find('#userName').simulate('change', {
@@ -49,6 +48,7 @@ describe('Test Failed Username and Password results', ()=> {
         })
 
         it('expect loginerror', ()=> {
+
             console.log( login.state() );
             expect(login.state().error.length).not.toEqual(0);
         })
