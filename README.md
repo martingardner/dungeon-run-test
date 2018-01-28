@@ -1,5 +1,5 @@
 # dungeon-run-test
-basic webpack builder with react, redux, and babel in webpack config.  babel should have es2015, es6, and stage-2 in it.
+This is being used to test out react jest and enzyme, and used for learning how to test and use various enzyme commands such as shallow.
 
 - npm install
 - npm run dev-server
