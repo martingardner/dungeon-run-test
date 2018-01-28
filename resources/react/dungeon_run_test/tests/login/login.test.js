@@ -31,12 +31,11 @@ describe('Test updateVal successful updates state username and password', ()=> {
     })
 });
 
-/* ***********
-still need to figure out how to trigger a method succesfully
-**************
-describe('Test Failed Username and Password results', ()=> {
-    let login = mount(<Login />);
 
+describe('Test Failed Username and Password results', ()=> {
+    let login = shallow(<Login />);
+
+    
     describe(' with correct username but wrong password', ()=> {
         beforeEach( ()=> {
             login.find('#userName').simulate('change', {
@@ -46,7 +45,7 @@ describe('Test Failed Username and Password results', ()=> {
                 target: { value: 'pass'} 
             })
             login.find('#loginSubmit').simulate('click');
-            //login.instance().validateLogin();
+            login.instance().validateLogin();
         })
 
         it('expect loginerror', ()=> {
@@ -54,8 +53,9 @@ describe('Test Failed Username and Password results', ()=> {
             expect(login.state().error.length).not.toEqual(0);
         })
     })
+    
 
 })
 
-*/
+
 

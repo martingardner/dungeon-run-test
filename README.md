@@ -5,7 +5,7 @@ basic webpack builder with react, redux, and babel in webpack config.  babel sho
 - npm run dev-server
 
 for testing
-- npm run test
+- npm run jest-test
 
 http://localhost:8080/
 

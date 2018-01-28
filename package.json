@@ -9,7 +9,7 @@
     "jest-test": "jest"
   },
   "jest": {
-    "setupFiles" : [
+    "setupFiles": [
       "<rootDir>/resources/react/dungeon_run_test/tests/setupTests.js"
     ],
     "collectCoverageFrom": [
@@ -37,7 +37,7 @@
     "jsdom": "11.5.1",
     "jsdom-global": "3.0.2",
     "react-addons-test-utils": "^15.6.2",
-    "react-test-renderer": "^16.1.1",
+    "react-test-renderer": "^15.6.2",
     "run-sequence": "^2.0.0",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
@@ -54,6 +54,7 @@
     "gulp-sass": "^3.1.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "^1.1.0"
+    "react-scripts": "^1.1.0",
+    "react-test-renderer": "^15.6.2"
   }
 }
