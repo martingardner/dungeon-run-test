@@ -17,7 +17,6 @@ class login extends React.Component {
 	}
 
 	validateLogin = () => {
-		//console.log('this.state', this.state.un, this.state.pw);
 		if(this.state.un === 'admin' && this.state.pw === 'password'){
 			this.setState({error : ''});
 		} else {
@@ -30,7 +29,7 @@ class login extends React.Component {
 		return(
 			<div className="login-page">
 				<h1>Login Page</h1>
-				<form onSubmit={ (e)=> this.validateLogin() }>
+				<form onSubmit={ (e)=> {e.preventDefault(); this.validateLogin()} }>
 					<fieldset>
 						<label>User Name</label>
 						<input type="text" id="userName" value={this.state.un} onChange={ (e)=> this.updateVal('un', e.target.value)} />

@@ -1,4 +1,4 @@
-# dungeon-run-test
+# jest-enzyme-learning
 This is being used to test out react jest and enzyme, and used for learning how to test and use various enzyme commands such as shallow.
 
 - npm install
@@ -14,3 +14,12 @@ gotchas to watch out for
 - create-react-app seems to be more stringent on what it allows for file structure so use base jest command
 - if there is an argument about enzyme adapter not being available, note the setupTests.js in tests folder as well as the setupFiles param in package.json
 - to go with the above also note the collectCoverageFrom param in package json for where the tests live.  I prefer the tests living separately from the use files.
+
+# npm packages for testing
+- babel
+- babel-jest
+- enzyme
+- enzyme-adapter-react-15
+- jest
+- jsdom
+- react-test-renderer

@@ -4,7 +4,6 @@
   "description": "starter for react-redux-webpack",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register ./resources/react/dungeon_run_test/tests --recursive",
     "dev-server": "webpack-dev-server --inline --progress --colors",
     "jest-test": "jest"
   },
